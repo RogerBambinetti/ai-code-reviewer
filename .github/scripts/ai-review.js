@@ -1,8 +1,8 @@
+import "dotenv/config";
 import { Octokit } from "@octokit/rest";
 import OpenAI from "openai";
-import * as dotenv from "dotenv";
 
-dotenv.config();
+console.log('ENVS', process.env)
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
