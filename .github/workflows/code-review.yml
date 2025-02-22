@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Dependencies
-        run: npm i openai @octokit/rest
+        run: npm i dotenv openai @octokit/rest
 
       - name: Run AI Code Review
         env:
