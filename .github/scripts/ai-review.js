@@ -1,6 +1,6 @@
-import "dotenv/config";
-import { Octokit } from "@octokit/rest";
-import OpenAI from "openai";
+const { Octokit } = require("@octokit/rest");
+const OpenAI = require("openai");
+require("dotenv").config();
 
 
 console.log('ENVS', process.env)
