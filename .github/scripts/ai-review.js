@@ -2,6 +2,7 @@ import "dotenv/config";
 import { Octokit } from "@octokit/rest";
 import OpenAI from "openai";
 
+
 console.log('ENVS', process.env)
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
