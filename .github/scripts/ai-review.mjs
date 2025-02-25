@@ -3,7 +3,7 @@ import { Octokit } from "@octokit/rest";
 import OpenAI from "openai";
 
 
-console.log('ENVS', process.env)
+console.log('OPENAI_API_KEY', process.env.OPENAI_API_KEY)
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
